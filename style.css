@@ -1,0 +1,184 @@
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: Comic Sans MS, cursive, sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  padding: 30px;
+  text-align: center;
+  width: 95%;
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2c2b2b;
+  margin-bottom: 20px;
+}
+
+.mode.hidden {
+  display: none;
+}
+
+.trace-board {
+  position: relative;
+  border: 3px dashed #2c2828;
+  border-radius: 15px;
+  background: #fff url("game\ image\ \ \ 2025-09-18\ at\ 03.47.13_05d48208.jpg") repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+#traceChar {
+  font-size: 10rem;
+  color: rgba(0,0,0,0.1);
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+}
+
+#drawBoard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.math-board {
+  padding: 20px;
+  border: 3px solid #343333;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.math-board h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#mathAnswer {
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 120px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#feedback {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#progress {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+/* Overlay start screen */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #f6d365, #fda085);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
+}
+
+.overlay h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#startBtn {
+  background: #4CAF50;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#startBtn:hover {
+  background: #45a049;
+}
+
+/* Hide elements when not needed */
+.hidden {
+  display: none;
+}
+
+pp
+#toggleMusic:hover {
+  background: #ff4f87;
+}
+button {
+  background: #fef136;
+  border: none;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #030101;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #4a8ae8;
+}
+
+.hint {
+  font-size: 0.9rem;
+  margin-top: 15px;
+  color: #444;
+}
+
+#resultScreen {
+  padding: 20px;
+  border-radius: 15px;
+  background: #fff;
+}
+
+#finalScore {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+/* Hide default audio controls */
+audio {
+  display: none;
+}
+
+
